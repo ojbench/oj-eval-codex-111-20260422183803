@@ -1,8 +1,6 @@
-// No standard headers allowed; implement strtok under namespace sjtu
+// No standard headers allowed; plain strtok for OJ wrapper namespace
 
 #undef strtok
-
-namespace sjtu {
 
 static int __is_delim_char(char c, const char * __restrict delim) {
     const char *p = delim;
@@ -51,5 +49,3 @@ char *strtok(char * __restrict str, const char * __restrict delim) {
         return token_start;
     }
 }
-
-} // namespace sjtu
