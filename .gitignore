@@ -1,0 +1,10 @@
+# Ignore local secrets and binaries
+.env
+.acmoj_token
+core.*
+*.core
+*.out
+*.o
+*.exe
+*.bin
+/test_bin
